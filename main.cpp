@@ -32,6 +32,8 @@ int main()
   
   cout << "Enter the item quantity:" << endl;
   cin >> quantity;
-  
+
+  cout << "TOTAL OUTPUT" << endl;
+  cout << 
   return 0;
 }
