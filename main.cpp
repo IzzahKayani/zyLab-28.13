@@ -22,9 +22,11 @@ int main()
 
   cout << "Enter the item price:" << endl;
   cin >> price;
+  item1.SetPrice(price);
   
   cout << "Enter the item quantity:" << endl;
   cin >> quantity;
+  item1.SetQuantity(quantity);
 
   cin.ignore();
 
@@ -32,14 +34,19 @@ int main()
 
   cout << "Enter the item name:" << endl;
   cin >> name;
+  item2.SetName(name);
 
   cout << "Enter the item price:" << endl;
   cin >> price;
+  item1.SetPrice(price);
   
   cout << "Enter the item quantity:" << endl;
   cin >> quantity;
-
+  item1.SetQuantity(quantity);
+  
   cout << "TOTAL OUTPUT" << endl;
-  cout << 
+  cout << item1.GetName() << " " << item1.GetQuantity() << " @ " << item1.GetPrice() << " = " << item1.GetQuantity()*item1.GetPrice() << endl;
+  cout << item2.GetName() << " " << item2.GetQuantity() << " @ " << item2.GetPrice() << " = " << item2.GetQuantity()*item2.GetPrice() << endl;
+  
   return 0;
 }
